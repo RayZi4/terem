@@ -1,0 +1,72 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url('bgbg.jpg') no-repeat center center; /* Указываем изображение как фон */
+    background-size: cover; /* Масштабируем изображение по размеру окна */
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('trap.png') no-repeat center center;
+    background-position: center;
+    background-size: 55%;
+}
+
+.side-images {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-images.left {
+    left: 20px;
+}
+
+.side-images.right {
+    right: 20px;
+}
+
+/* Новые персонажи автоматически унаследуют стили животных */
+.animal {
+    width: 60px; /* Размеры всех персонажей одинаковые */
+    height: auto;
+    cursor: grab;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+/* Дополнительное расстояние для больших колонок персонажей */
+.side-images {
+    gap: 15px;
+}
+
+.house {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    background: transparent;
+}
+
+.window {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#window1 { top: 260px; left: 155px; }
+#window2 { top: 50px; left: 250px; }
+#window3 { top: 260px; left: 360px; }
+#window4 { top: 485px; left: 155px; }
+#window5 { top: 485px; left: 360px; }
+#window6 { top: 465px; left: -75px; }

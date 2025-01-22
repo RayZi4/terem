@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перетаскивание животных</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Фон с идентификатором -->
+    <div class="background" id="trap"></div>
+
+    <!-- Левая колонка с животными -->
+    <div class="side-images left">
+        <img src="Волчара.png" alt="Кот" class="animal" draggable="true" id="cat">
+        <img src="Дикая львица.png" alt="Лев" class="animal" draggable="true" id="lion">
+        <img src="Дикий лис.png" alt="Лиса" class="animal" draggable="true" id="fox">
+        <img src="Козище.png" alt="Козище" class="animal" draggable="true" id="goat">
+    </div>
+
+    <!-- Правая колонка с животными -->
+    <div class="side-images right">
+        <img src="Заяц укуреный.png" alt="Заяц" class="animal" draggable="true" id="rabbit">
+        <img src="Лягуха чокнутая.png" alt="Лягушка" class="animal" draggable="true" id="frog">
+        <img src="Медвед вафиге.png" alt="Медведь" class="animal" draggable="true" id="bear">
+        <img src="Чо за лев этот тигр.png" alt="Чо за лев этот тигр" class="animal" draggable="true" id="tiger">
+        <img src="Мышара.png" alt="Мышара" class="animal" draggable="true" id="mouse">
+    </div>
+
+    <!-- Дом с окнами -->
+    <div class="house">
+        <div class="window" id="window1"></div>
+        <div class="window" id="window2"></div>
+        <div class="window" id="window3"></div>
+        <div class="window" id="window4"></div>
+        <div class="window" id="window5"></div>
+        <div class="window" id="window6"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
